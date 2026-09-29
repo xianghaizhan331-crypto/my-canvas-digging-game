@@ -2745,7 +2745,7 @@ async function initFirebase(){
     Score.ok=false; Score.mode='LOCAL';
   }
   paintFbStatus();
-  refreshScores();
+  await refreshScores();
 }
 /* EVERY match is kept — nothing is ever truncated. A zero-point match is a
    record too. (Local mode holds thousands of entries comfortably.) */
